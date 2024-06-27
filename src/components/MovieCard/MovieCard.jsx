@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import css from "./MovieCard.module.css";
 
 export const MovieCard = ({ movie, path }) => {
+  const location = useLocation();
+
   return (
     <div className={css.movieCard}>
-      <Link to={path + movie.id}>
+      <Link to={path + movie.id} state={location}>
         <img
           className={css.posterImg}
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

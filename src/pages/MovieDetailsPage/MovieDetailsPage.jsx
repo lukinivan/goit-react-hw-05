@@ -1,10 +1,10 @@
 import css from "./MovieDetailsPage.module.css";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import {
   Link,
   NavLink,
   Outlet,
-  useNavigate,
+  useLocation,
   useParams,
 } from "react-router-dom";
 import { getMovieById } from "../../service/getMoviesAPI";
@@ -13,7 +13,9 @@ import { Container } from "../../components";
 const MovieDetailsPage = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
-  const navigate = useNavigate();
+
+  const location = useLocation();
+  const goBackLink = useRef(location.state ?? "/");
 
   useEffect(() => {
     const getMovieData = async () => {
@@ -36,7 +38,7 @@ const MovieDetailsPage = () => {
 
   return (
     <Container>
-      <Link className={css.goBack} to="/">
+      <Link className={css.goBack} to={goBackLink.current}>
         Go Back
       </Link>
       <div className={css.detailsWrap}>
