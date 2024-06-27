@@ -14,7 +14,7 @@ const MovieReviews = () => {
       setReviews(data);
     };
     getMovieData();
-  }, []);
+  }, [id]);
 
   if (!reviews) return <h2>Loading....</h2>;
 

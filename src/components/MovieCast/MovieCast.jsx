@@ -15,7 +15,7 @@ const MovieCast = () => {
       setActors(data);
     };
     getMovieData();
-  }, []);
+  }, [id]);
 
   if (!actors) return <h2>Loading....</h2>;
 
