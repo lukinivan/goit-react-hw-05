@@ -1,0 +1,31 @@
+.movieCard {
+  width: 250px;
+  height: 420px;
+  text-align: center;
+
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  background-color: white;
+}
+
+.movieCard:hover {
+  box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2); /* Більш помітна тінь при наведенні */
+}
+
+.posterImg {
+  width: 250px;
+  height: 300px;
+}
+
+.titleWrap {
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

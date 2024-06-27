@@ -1,0 +1,38 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.castCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  border: 1px solid;
+  border-radius: 4px;
+
+  width: 180px;
+  height: 370px;
+  padding: 10px 0;
+}
+
+.imageWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+}
+
+.castImg {
+  width: 180px;
+  height: 270px;
+}
+
+.text {
+  height: 40px;
+}

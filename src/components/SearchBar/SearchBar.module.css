@@ -2,31 +2,35 @@
   padding: 10px;
   margin: 0 auto;
   height: 50px;
-  width: 300px;
+  width: 550px;
   position: relative;
 }
 
 .field {
-  width: 200px;
-  height: 25px;
-}
+  width: 400px;
+  height: 35px;
+  text-align: center;
 
-.error {
-  position: absolute;
-  top: 35px;
-  left: 20px;
-  color: red;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
 }
 
 .btn {
-  border: 1px solid;
-  border-radius: 5px;
-  width: 70px;
-  height: 25px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+
   margin-left: 10px;
+
+  background-color: rgb(216, 215, 214);
   transition: background-color 250ms ease-out;
 }
 
 .btn:hover {
-  background-color: rgb(216, 216, 216);
+  color: rgb(255, 255, 255);
+  background-color: orangered;
 }
